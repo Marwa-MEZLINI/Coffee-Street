@@ -1,17 +1,19 @@
 body {
     width: 1440px;
     height: 4650px;
+    background-color: #F6EBDA;
 }
 
-.hero {
-    background-color: #F6EBDA;
+body .Hero {
     width: 1440px;
     height: 970px;
-    background: url(bg_img_hero.png1) right top no-repeat, url(bg_mg_hero.png) left bottom no-repeat;
+    /*background: url(bg_img_hero.png1) right top no-repeat, url(bg_mg_hero.png) left bottom no-repeat;*/
+    background-image: url(bg-image.png);
     margin: 0%;
     padding: 0;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 /*navbar styling*/
@@ -118,3 +120,88 @@ body {
 }
 
 /*navbar styling end*/
+/*content_hero styling*/
+.content_hero {
+    width: 489px;
+    height: 300px;
+    position: absolute;
+    left: 135px;
+    top: 216px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content_hero h1 {
+    width: 100%;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 72px;
+    text-align: left;
+    color: #2f2105;
+    margin-bottom: 24px;
+}
+
+.content_hero h1 span {
+    color: #ff902b;
+}
+
+.content_hero p {
+    width: 393px;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 27px;
+    color: #7e7d7a;
+    margin: 0 0 32px 0;
+}
+
+.content_hero .btn-frame {
+    display: flex;
+    flex-direction: row;
+}
+
+.content_hero .btn-frame button:first-child {
+    width: 170px;
+    height: 46px;
+    background-color: #2f2105;
+    box-shadow: 0px 4px 32px rgba(223, 195, 124, 0.25);
+    border-radius: 32px;
+    border: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.content_hero .btn-frame button:first-child img {
+    margin-left: 15px;
+}
+
+.content_hero .btn-frame button:last-child {
+    width: 118px;
+    height: 38px;
+    background-color: transparent;
+    border: none;
+    color: #ff902b;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    align-self: center;
+    margin-left: 26px;
+}
+
+.Hero .img-hero {
+    position: absolute;
+    width: 526.71px;
+    height: 416px;
+    left: 791px;
+    top: 158px;
+}
