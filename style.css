@@ -1,0 +1,120 @@
+body {
+    width: 1440px;
+    height: 4650px;
+}
+
+.hero {
+    background-color: #F6EBDA;
+    width: 1440px;
+    height: 970px;
+    background: url(bg_img_hero.png1) right top no-repeat, url(bg_mg_hero.png) left bottom no-repeat;
+    margin: 0%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/*navbar styling*/
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 1161px;
+    height: 40px;
+    position: absolute;
+    top: 36px;
+    left: 135px;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    height: 30px;
+    justify-self: flex-start;
+
+}
+
+.navbar .menu {
+    justify-self: center;
+    width: 322px;
+    height: 27px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar .menu a {
+    height: 27px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.navbar .menu a:nth-child(1) {
+    color: #ff902b;
+    width: 80px;
+
+}
+
+.navbar .menu a:nth-child(2) {
+    width: 107px;
+    color: #000000;
+}
+
+.navbar .menu a:nth-child(3) {
+    width: 71px;
+    color: #000000;
+}
+
+.navbar .purchase-process {
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .search {
+    width: 222px;
+    height: 40px;
+}
+
+.navbar .search input {
+    width: 222px;
+    height: 40px;
+    filter: drop-shadow(6px 2px 24px rgba(0, 0, 0, 0.13));
+    border-radius: 35px;
+    display: inline-block;
+    outline: none;
+}
+
+.navbar .search img {
+    position: absolute;
+    left: 15px;
+    right: 12.5%;
+    bottom: 12.5%;
+    top: 10px;
+    display: inline-block;
+    outline: none;
+}
+
+.navbar .search input::placeholder {
+    position: absolute;
+    width: 75px;
+    height: 18px;
+    left: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #929292;
+    top: 11px;
+}
+
+.navbar .cart {
+    margin-left: 15px;
+}
+
+/*navbar styling end*/
