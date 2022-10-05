@@ -205,3 +205,130 @@ body .Hero {
     left: 791px;
     top: 158px;
 }
+
+.popular-product {
+    position: absolute;
+    width: 1155px;
+    height: 471px;
+    left: 135px;
+    top: 659px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popular-product h1 {
+    font-size: 32px;
+    margin: 0;
+    line-height: 48px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 32px;
+}
+
+.popular-product h1 span {
+    text-decoration: underline #ff902b;
+}
+
+.popular-product .cards {
+    width: 1141px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 385px;
+}
+
+.popular-product .cards .border {
+    width: 355px;
+    height: 385px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4)0%, rgba(255, 255, 255, 0.7)100%);
+    backdrop-filter: blur(2px);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popular-product .cards .card {
+    width: 343px;
+    height: 373px;
+    filter: drop-shadow(10px 10px 32px rgba(0, 0, 0, 0.25));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    position: relative;
+}
+
+.popular-product .cards .card img:first-child {
+    width: 307px;
+    height: 226px;
+    position: absolute;
+    top: 24px;
+    left: 18px;
+}
+
+.popular-product .cards .card img:nth-child(2) {
+    width: 70px;
+    height: 34px;
+    position: absolute;
+    top: 31px;
+    left: 28px;
+    z-index: 1;
+}
+
+.body_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 281px;
+    height: 85px;
+    position: absolute;
+    left: 29px;
+    bottom: 19px;
+}
+
+.body_card .product {
+    display: flex;
+    flex-direction: column;
+}
+
+.body_card .product p {
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.04em;
+    color: #2f2105;
+    margin: 0;
+}
+
+.body_card .product .kind {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.body_card .product .kind p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.04em;
+    color: #ff902b;
+    border: 2px solid #ff902b;
+    border-color: #ffd28f;
+    color: #ffd28f;border-radius: 8px;
+    padding: 4px 17px;
+    margin: 0;
+    width: 30px;
+    height: 24px;
+}
+
+.body_card .product .kind p:last-child {
+    border-color: #ffd28f;
+    color: #ffd28f;
+}
