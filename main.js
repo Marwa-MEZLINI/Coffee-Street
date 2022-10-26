@@ -28,3 +28,17 @@ function increment(element) {
 
   console.log(switchImage);
 }
+
+//adding a popup shopping bag
+
+function classToggle() {
+  let elem = document.getElementById('dialog');
+  elem.classList.toggle('show');
+}
+
+//closing the popup shopping bag
+
+function closeModal() {
+  let elem = document.getElementById('dialog');
+  elem.classList.remove('show');
+}

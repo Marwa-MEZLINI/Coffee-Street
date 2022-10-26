@@ -28,10 +28,19 @@
                     <img src="Vector.png">
                 </div>
                 <div class="cart">
+                    <a id="show-modal" href="#" onclick="classToggle()">
                     <img src="icons_cart.png">
-                    <div id="cartAmount">0</div>
+                    <div id="cartAmount">0</div></a>
                 </div>
-
+                <div id="dialog" class="modal">
+                    <div class="dialog-box">
+                        <p>Shopping Bag</p>
+                        <div class="close-button" onclick="closeModal()">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
         <div class="content_hero">
