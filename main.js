@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //creation of products basket
 //creation of a function that changes the cart image onclick and increments the number of selected items on the main cart in the navbar
 
@@ -29,16 +28,3 @@ function increment(element) {
 
   console.log(switchImage);
 }
-=======
-//changing image onclick
-function  {
-    const cart = document.querySelectorAll('.add-to-cart')
-  cart.innerHTML.src = "shopping-cart.png";
-}
-document.addEventListener("click", changeImage);
-
-cart.forEach((img) => {
-    img.addEventListener('click', changeImage)
-    
-});
->>>>>>> cf777d3c5f6b1abc7b34b01fb97dd20a7aa2fdb2

@@ -118,11 +118,8 @@ body .Hero {
 .navbar .cart img{
     margin-left: 15px;
 }
-<<<<<<< HEAD
-.navbar .cart #cartAmount {
-=======
+
 .navbar .cart .cartAmount {
->>>>>>> cf777d3c5f6b1abc7b34b01fb97dd20a7aa2fdb2
     font-size: 16px;
     background-color: #ff902b;
     color: #ffffff;
