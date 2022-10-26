@@ -3,7 +3,7 @@
 
 let basket = [];
 
-function increment(element) {
+function addItem(element) {
   let product = {
     id: element.id,
     title: document.querySelector(`#${element.id} > .body_card > .product`)
@@ -12,8 +12,6 @@ function increment(element) {
     price: document.querySelector(`#${element.id} > .body_card > .rating`)
       .firstElementChild.innerHTML,
   };
-
-
   basket.push(product);
 
   document.getElementById("cartAmount").innerHTML = basket.length;
