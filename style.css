@@ -23,7 +23,7 @@ body .Hero {
     flex-direction: row;
     width: 1161px;
     height: 40px;
-    position: absolute;
+    position:sticky;
     top: 36px;
     left: 135px;
     justify-content: space-between;
@@ -115,9 +115,20 @@ body .Hero {
     top: 11px;
 }
 
-.navbar .cart {
+.navbar .cart img{
     margin-left: 15px;
 }
+.navbar .cart #cartAmount {
+    font-size: 16px;
+    background-color: #ff902b;
+    color: #ffffff;
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    padding: 3px;
+    border-radius: 3px;
+}
+
 
 /*navbar styling end*/
 
@@ -183,6 +194,8 @@ body .Hero {
 
 .content_hero .btn-frame button:first-child img {
     margin-left: 15px;
+    width: 20px;
+    height: 20px;
 }
 
 .content_hero .btn-frame button:last-child {
@@ -366,7 +379,7 @@ body .Hero {
     margin: 0;
 }
 
-.body_card .rating .cart img:last-child {
+.body_card .rating .add_to_cart img:last-child {
     width: 43px;
     height: 43px;
     position: relative;

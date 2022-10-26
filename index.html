@@ -29,14 +29,16 @@
                 </div>
                 <div class="cart">
                     <img src="icons_cart.png">
+                    <div id="cartAmount">0</div>
                 </div>
+                
             </div>
         </nav>
         <div class="content_hero">
             <h1>Enjoy your <span>coffee</span> before your activity</h1>
             <p>Boost your productivity and build your mood with a glass of coffee in the morning</p>
             <div class="btn-frame">
-                <button>Order now <img src="Group 2.png"></button>
+                <button>Order now <img src="Frame 5.png"></button>
                 <button>More menu</button>
             </div>
         </div>
@@ -49,7 +51,7 @@
         <h1>Popular <span>Now</span></h1>
         <div class="cards">
             <div class="border">
-                <div class="card">
+                <div class="card"  id="prod1">
                     <img src="img_product.png">
                     <img src="rating_product.png">
                     <div class="body_card">
@@ -62,14 +64,14 @@
                         </div>
                         <div class="rating">
                             <p>21 K</p>
-                            <a class="cart" href="#"><img src="Group 2.png" alt=""></a>
+                            <a class="add_to_cart" onclick="increment(this.parentNode.parentNode.parentNode)" href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="border">
-                <div class="card">
+                <div class="card" id="prod2">
                     <img src="img_product (1).png">
                     <img src="rating_product.png">
                     <div class="body_card">
@@ -82,14 +84,14 @@
                         </div>
                         <div class="rating">
                             <p>12 K</p>
-                            <a class="cart" href="#"><img src="Group 2.png" alt=""></a>
+                            <a class="add_to_cart" onclick="increment(this.parentNode.parentNode.parentNode)" href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="border">
-                <div class="card">
+                <div class="card" id="prod3">
                     <img src="img_product (2).png">
                     <img src="rating_product.png">
                     <div class="body_card">
@@ -102,7 +104,7 @@
                         </div>
                         <div class="rating">
                             <p>23 K</p>
-                            <a class="cart" href="#"><img src="Group 2.png" alt=""></a>
+                            <a class="add_to_cart" onclick="increment(this.parentNode.parentNode.parentNode)" href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -162,7 +164,7 @@
         </div>
         <div class="cards">
             <div class="border">
-                <div class="card">
+                <div class="card" id="prod4">
                     <img src="img_product (3).png">
                     <img src="rating_product.png">
                     <div class="body_card">
@@ -172,14 +174,14 @@
                         </div>
                         <div class="rating">
                             <p>12 K</p>
-                            <a class="cart" href="#"><img src="Group 2.png" alt=""></a>
+                            <a class="add_to_cart" onclick="increment(this.parentNode.parentNode.parentNode)" href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="border">
-                <div class="card">
+                <div class="card" id="prod5">
                     <img src="img_product (4).png">
                     <img src="rating_product.png">
                     <div class="body_card">
@@ -189,14 +191,14 @@
                         </div>
                         <div class="rating">
                             <p>12 K</p>
-                            <a class="cart" href="#"><img src="Group 2.png" alt=""></a>
+                            <a class="add_to_cart" onclick="increment(this.parentNode.parentNode.parentNode)" href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="border">
-                <div class="card">
+                <div class="card" id="prod6">
                     <img src="img_product (5).png">
                     <img src="rating_product.png">
                     <div class="body_card">
@@ -206,14 +208,14 @@
                         </div>
                         <div class="rating">
                             <p>12 K</p>
-                            <a class="cart" href="#"><img src="Group 2.png" alt=""></a>
+                            <a class="add_to_cart" onclick="increment(this.parentNode.parentNode.parentNode)" href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="border">
-                <div class="card">
+                <div class="card" id="prod7">
                     <img src="img_product (6).png">
                     <img src="rating_product.png">
                     <div class="body_card">
@@ -223,14 +225,14 @@
                         </div>
                         <div class="rating">
                             <p>12 K</p>
-                            <a class="cart" href="#"><img src="Group 2.png" alt=""></a>
+                            <a class="add_to_cart" onclick="increment(this.parentNode.parentNode.parentNode)" href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="border">
-                <div class="card">
+                <div class="card" id="prod8">
                     <img src="img_product (7).png">
                     <img src="rating_product.png">
                     <div class="body_card">
@@ -240,14 +242,14 @@
                         </div>
                         <div class="rating">
                             <p>12 K</p>
-                            <a class="cart" href="#"><img src="Group 2.png" alt=""></a>
+                            <a class="add_to_cart" onclick="increment(this.parentNode.parentNode.parentNode)" href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="border">
-                <div class="card">
+                <div class="card" id="prod9">
                     <img src="img_product (8).png">
                     <img src="rating_product.png">
                     <div class="body_card">
@@ -257,7 +259,7 @@
                         </div>
                         <div class="rating">
                             <p>12 K</p>
-                            <a class="cart" href="#"><img src="Group 2.png" alt=""></a>
+                            <a class="add_to_cart" onclick="increment(this.parentNode.parentNode.parentNode)" href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -310,6 +312,7 @@
             <input type="Submit" name="submit" value="Order now">
         </form>
     </section>
+    <script src="main.js"></script>
 </body>
 
 </html>
