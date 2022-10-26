@@ -9,7 +9,10 @@ function increment(element) {
     title: document.querySelector(`#${element.id} > .body_card > .product`)
       .firstElementChild.innerHTML,
     imageUrl: element.firstElementChild.getAttribute("src"),
+    price: document.querySelector(`#${element.id} > .body_card > .rating`)
+      .firstElementChild.innerHTML,
   };
+
 
   basket.push(product);
 
@@ -26,7 +29,7 @@ function increment(element) {
       .lastElementChild.firstChild.setAttribute("src", switchImage);
   }
 
-  console.log(switchImage);
+  console.log(basket);
 }
 
 //adding a popup shopping bag

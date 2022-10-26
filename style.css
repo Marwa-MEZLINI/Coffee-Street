@@ -115,9 +115,11 @@ body .Hero {
     color: #929292;
     top: 11px;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 .navbar .cart a img {
     margin-left: 15px;
 }
@@ -182,11 +184,11 @@ a{
     top: 13px;
 }
 
-.close-button>div:first-child{
+.close-button>div:first-child {
     -webkit-transform: rotate(45deg);
 }
 
-.close-button>div:last-child{
+.close-button>div:last-child {
     -webkit-transform: rotate(-45deg);
 }
 
@@ -214,7 +216,7 @@ a{
     text-align: left;
     color: #2f2105;
     margin-bottom: 24px;
-    }
+}
 
 .content_hero h1 span {
     color: #ff902b;
@@ -424,17 +426,17 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding-left: 10px;
     gap: 10px;
 }
 
 .body_card .rating p {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 36px;
     text-align: center;
     letter-spacing: 0.04em;
-    width: 53px;
+    width: 70px;
     height: 36px;
     font-style: normal;
     color: #2f2105;
@@ -449,7 +451,7 @@ a{
     display: flex;
     align-self: center;
     justify-self: center;
-    top: 0px;
+    top: -13px;
     left: 0px;
 }
 
@@ -725,17 +727,17 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+
     gap: 10px;
 }
 
 .menu_section .cards .border .card .body_card .rating p {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 15px;
     line-height: 36px;
     text-align: center;
     letter-spacing: 0.04em;
-    width: 53px;
+    width: 52px;
     height: 36px;
     font-style: normal;
     color: #2f2105;
@@ -750,7 +752,7 @@ a{
     display: flex;
     align-self: center;
     justify-self: center;
-    top: 0px;
+    top: -15px;
     left: 0px;
 }
 
