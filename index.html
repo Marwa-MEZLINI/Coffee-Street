@@ -29,8 +29,9 @@
                 </div>
                 <div class="cart">
                     <a id="show-modal" href="#" onclick="classToggle()">
-                    <img src="icons_cart.png">
-                    <div id="cartAmount">0</div></a>
+                        <img src="icons_cart.png">
+                        <div id="cartAmount">0</div>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -63,7 +64,7 @@
                             </div>
                         </div>
                         <div class="rating">
-                            <p>2.1 DT</p>
+                            <p>2.100 DT</p>
                             <a class="add_to_cart" onclick="addRemoveItems(this.parentNode.parentNode.parentNode)"
                                 href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
 
@@ -85,7 +86,7 @@
                             </div>
                         </div>
                         <div class="rating">
-                            <p>4.2 DT</p>
+                            <p>4.200 DT</p>
                             <a class="add_to_cart" onclick="addRemoveItems(this.parentNode.parentNode.parentNode)"
                                 href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
@@ -106,7 +107,7 @@
                             </div>
                         </div>
                         <div class="rating">
-                            <p>2.3 DT</p>
+                            <p>2.300 DT</p>
                             <a class="add_to_cart" onclick="addRemoveItems(this.parentNode.parentNode.parentNode)"
                                 href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
@@ -177,7 +178,7 @@
                             <p>bread with meat and vegetables</p>
                         </div>
                         <div class="rating">
-                            <p>5.6 DT</p>
+                            <p>5.600 DT</p>
                             <a class="add_to_cart" onclick="addRemoveItems(this.parentNode.parentNode.parentNode)"
                                 href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
@@ -195,7 +196,7 @@
                             <p>Hot Milk with less sugar</p>
                         </div>
                         <div class="rating">
-                            <p>3.2 DT</p>
+                            <p>3.200 DT</p>
                             <a class="add_to_cart" onclick="addRemoveItems(this.parentNode.parentNode.parentNode)"
                                 href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
@@ -213,7 +214,7 @@
                             <p>Coffee with ice cream vanilla</p>
                         </div>
                         <div class="rating">
-                            <p>7 DT</p>
+                            <p>7.000 DT</p>
                             <a class="add_to_cart" onclick="addRemoveItems(this.parentNode.parentNode.parentNode)"
                                 href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
@@ -231,7 +232,7 @@
                             <p>Hot Cappucino</p>
                         </div>
                         <div class="rating">
-                            <p>7 DT</p>
+                            <p>7.000 DT</p>
                             <a class="add_to_cart" onclick="addRemoveItems(this.parentNode.parentNode.parentNode)"
                                 href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
@@ -249,7 +250,7 @@
                             <p>Hot Moccacinno</p>
                         </div>
                         <div class="rating">
-                            <p>6.2 DT</p>
+                            <p>6.200 DT</p>
                             <a class="add_to_cart" onclick="addRemoveItems(this.parentNode.parentNode.parentNode)"
                                 href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
@@ -267,7 +268,7 @@
                             <p>Waffle with ice cream</p>
                         </div>
                         <div class="rating">
-                            <p>9.5 DT</p>
+                            <p>9.500 DT</p>
                             <a class="add_to_cart" onclick="addRemoveItems(this.parentNode.parentNode.parentNode)"
                                 href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
@@ -322,15 +323,25 @@
             <input type="Submit" name="submit" value="Order now">
         </form>
     </section>
-    <!--popup modal start-->
+    <!--popup cart modal start-->
     <div id="dialog" class="modal">
         <div class="dialog-box">
             <p>Shopping Bag</p>
-            <div id="bag">                
+            <div id="bag">
             </div>
             <div class="close-button" onclick="closeModal()">
                 <div></div>
                 <div></div>
+            </div>
+            <!--cart-footer-->
+            <div class="cart-footer">
+                <!--Total-->
+                <div class="total">
+                    <div class="total-title">Total:</div>
+                    <div class="total-price" >0.000 DT</div>
+                </div>
+                <!--next button-->
+                <button type="button" class="next-btn">Next</button>
             </div>
         </div>
     </div>

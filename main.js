@@ -58,7 +58,7 @@ function updateBag() {
         <div id='qty'>${qty}</div>
         <div id='${id}' class="increment" onclick='increment(this.id)'><div></div><div></div></div>
         </div>
-        <div id='tot'>${parseFloat(price) * qty}</div>
+        <div id='tot'>${(parseFloat(price) * qty).toFixed(3)} DT</div>
         <div id='${id}' class="delete-btn" onclick='deleteItem(this.id)'><div></div><div></div></div>
         </div>  
       `;
@@ -110,6 +110,7 @@ function addRemoveItems(element) {
   } else {
     removeItem(element);
   }
+  totalAmount()
 }
 
 function increment(id) {
@@ -120,6 +121,7 @@ function increment(id) {
     basket[basketItemIndex].qty += 1;
     updateBag();
   }
+  totalAmount()
 }
 
 function decrement(id) {
@@ -130,4 +132,16 @@ function decrement(id) {
     basket[basketItemIndex].qty -= 1;
     updateBag();
   }
+  totalAmount()
+}
+
+function totalAmount() {
+  let total = Number(0);
+  for (let i = 0; i < basket.length; i++) {
+
+    total = total + (parseFloat(basket[i].price) * basket[i].qty).toFixed(3)
+    console.log(total)
+  }
+
+  return (document.querySelector('.total-price').textContent = total + " DT")
 }
