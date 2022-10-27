@@ -338,13 +338,33 @@
                 <!--Total-->
                 <div class="total">
                     <div class="total-title">Total:</div>
-                    <div class="total-price" >0.000 DT</div>
+                    <div class="total-price">0.000 DT</div>
                 </div>
                 <!--next button-->
-                <button type="button" class="next-btn">Next</button>
+                <button type="button" class="next-btn" onclick="formsClassToggle()">Next</button>
+            </div>
+        </div>
+        <!--popup forms dialog-box start-->
+        <div id="forms-box" class="forms-dialog-box">
+            <div class="name">
+                <label for="first-name">First Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Enter Your First Name">
+            </div>
+            <div class="last-name">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Enter Your Last Name">
+            </div>
+            <div class="potal-code">
+                <label for="potalcode">Postal Code</label>
+                <input type="number" id="postalcode" name="postalcode" placeholder="****"> 
+            </div>
+            <div class="city">
+                <label for="city">City</label>
+                <input type="">
             </div>
         </div>
     </div>
+
     <script src="main.js"></script>
 </body>
 

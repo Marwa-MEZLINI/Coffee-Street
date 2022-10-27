@@ -395,6 +395,55 @@ a {
 
 /*shopping bag footer styling end*/
 
+/*forms dialog-box styling*/
+
+.forms-dialog-box {
+    display: none;
+    width: 70%;
+    height: 55%;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-padding-right: 15px;
+
+}
+
+.forms-dialog-box.show {
+    display: block;
+}
+
+/* width */
+.forms-dialog-box::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.forms-dialog-box::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Handle */
+.forms-dialog-box::-webkit-scrollbar-thumb {
+    background: #f4ae26;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.forms-dialog-box::-webkit-scrollbar-thumb:hover {
+    background: #ff902b;
+}
+/*forms dialog-box styling end*/
+
 /*content_hero styling*/
 .content_hero {
     width: 489px;

@@ -99,6 +99,8 @@ function deleteItem(id) {
   document
     .querySelector(`#${id} > .body_card > .rating`)
     .lastElementChild.firstChild.setAttribute("src", switchImage);
+
+  totalAmount()
 }
 
 function addRemoveItems(element) {
@@ -136,12 +138,18 @@ function decrement(id) {
 }
 
 function totalAmount() {
-  let total = Number(0);
+  let total = 0;
   for (let i = 0; i < basket.length; i++) {
 
-    total = total + (parseFloat(basket[i].price) * basket[i].qty).toFixed(3)
+    total += (parseFloat(basket[i].price) * basket[i].qty)
     console.log(total)
   }
 
-  return (document.querySelector('.total-price').textContent = total + " DT")
+  return (document.querySelector('.total-price').textContent = parseFloat(total).toFixed(3) + " DT")
+}
+
+//adding a popup forms window
+function formsClassToggle() {
+  let elem = document.getElementById("forms-box");
+  elem.classList.toggle("show");
 }
