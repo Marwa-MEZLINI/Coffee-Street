@@ -346,21 +346,44 @@
         </div>
         <!--popup forms dialog-box start-->
         <div id="forms-box" class="forms-dialog-box">
-            <div class="name">
-                <label for="first-name">First Name</label>
-                <input type="text" id="firstname" name="firstname" placeholder="Enter Your First Name">
+            <div class="form">
+                <div class="name">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Enter Your First Name">
+                </div>
+                <div class="last-name">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Enter Your Last Name">
+                </div>
+                <div class="potal-code">
+                    <label for="potalcode">Postal Code</label>
+                    <input type="number" id="postalcode" name="postalcode" placeholder="****">
+                </div>
+                <div class="city">
+                    <label for="city">City</label>
+                    <select name="city" id="city" value="Choose a city">
+                        <option value="city">City</option>
+                        <option value="city1">City1</option>
+                        <option value="city2">City2</option>
+                        <option value="city3">City3</option>
+                    </select>
+                </div>
+                <div class="street">
+                    <label for="street">Street</label>
+                    <input type="text" id="street" name="street" placeholder="Enter Your Street">
+                </div>
+                <div class="email">
+                    <label for="email">email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email">
+                </div>
+                <div class="phone">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number">
+                </div>
             </div>
-            <div class="last-name">
-                <label for="lastname">Last Name</label>
-                <input type="text" id="lastname" name="lastname" placeholder="Enter Your Last Name">
-            </div>
-            <div class="potal-code">
-                <label for="potalcode">Postal Code</label>
-                <input type="number" id="postalcode" name="postalcode" placeholder="****"> 
-            </div>
-            <div class="city">
-                <label for="city">City</label>
-                <input type="">
+            <div class="buttons">
+                <button class="prev-btn">Previous</button>
+                <button class="pay-btn">Payment</button>
             </div>
         </div>
     </div>
