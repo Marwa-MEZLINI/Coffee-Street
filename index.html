@@ -32,18 +32,6 @@
                     <img src="icons_cart.png">
                     <div id="cartAmount">0</div></a>
                 </div>
-                <div id="dialog" class="modal">
-                    <div class="dialog-box">
-                        <p>Shopping Bag</p>
-                        <div id="bag"  >
-                            <ul></ul>
-                        </div>
-                        <div class="close-button" onclick="closeModal()">
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </nav>
         <div class="content_hero">
@@ -76,7 +64,7 @@
                         </div>
                         <div class="rating">
                             <p>2.1 DT</p>
-                            <a class="add_to_cart" onclick="addItem(this.parentNode.parentNode.parentNode)"
+                            <a class="add_to_cart" onclick="addRemoveItems(this.parentNode.parentNode.parentNode)"
                                 href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
 
                         </div>
@@ -98,7 +86,7 @@
                         </div>
                         <div class="rating">
                             <p>4.2 DT</p>
-                            <a class="add_to_cart" onclick="addItem(this.parentNode.parentNode.parentNode)"
+                            <a class="add_to_cart" onclick="addRemoveItems(this.parentNode.parentNode.parentNode)"
                                 href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
                     </div>
@@ -119,7 +107,7 @@
                         </div>
                         <div class="rating">
                             <p>2.3 DT</p>
-                            <a class="add_to_cart" onclick="addItem(this.parentNode.parentNode.parentNode)"
+                            <a class="add_to_cart" onclick="addRemoveItems(this.parentNode.parentNode.parentNode)"
                                 href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
                     </div>
@@ -190,7 +178,7 @@
                         </div>
                         <div class="rating">
                             <p>5.6 DT</p>
-                            <a class="add_to_cart" onclick="addItem(this.parentNode.parentNode.parentNode)"
+                            <a class="add_to_cart" onclick="addRemoveItems(this.parentNode.parentNode.parentNode)"
                                 href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
                     </div>
@@ -208,7 +196,7 @@
                         </div>
                         <div class="rating">
                             <p>3.2 DT</p>
-                            <a class="add_to_cart" onclick="addItem(this.parentNode.parentNode.parentNode)"
+                            <a class="add_to_cart" onclick="addRemoveItems(this.parentNode.parentNode.parentNode)"
                                 href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
                     </div>
@@ -226,7 +214,7 @@
                         </div>
                         <div class="rating">
                             <p>7 DT</p>
-                            <a class="add_to_cart" onclick="addItem(this.parentNode.parentNode.parentNode)"
+                            <a class="add_to_cart" onclick="addRemoveItems(this.parentNode.parentNode.parentNode)"
                                 href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
                     </div>
@@ -244,7 +232,7 @@
                         </div>
                         <div class="rating">
                             <p>7 DT</p>
-                            <a class="add_to_cart" onclick="addItem(this.parentNode.parentNode.parentNode)"
+                            <a class="add_to_cart" onclick="addRemoveItems(this.parentNode.parentNode.parentNode)"
                                 href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
                     </div>
@@ -262,7 +250,7 @@
                         </div>
                         <div class="rating">
                             <p>6.2 DT</p>
-                            <a class="add_to_cart" onclick="addItem(this.parentNode.parentNode.parentNode)"
+                            <a class="add_to_cart" onclick="addRemoveItems(this.parentNode.parentNode.parentNode)"
                                 href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
                     </div>
@@ -280,7 +268,7 @@
                         </div>
                         <div class="rating">
                             <p>9.5 DT</p>
-                            <a class="add_to_cart" onclick="addItem(this.parentNode.parentNode.parentNode)"
+                            <a class="add_to_cart" onclick="addRemoveItems(this.parentNode.parentNode.parentNode)"
                                 href="#"><img class="add-to-cart" src="Frame 5.png" alt=""></a>
                         </div>
                     </div>
@@ -334,6 +322,20 @@
             <input type="Submit" name="submit" value="Order now">
         </form>
     </section>
+    <!--popup modal start-->
+    <div id="dialog" class="modal">
+        <div class="dialog-box">
+            <p>Shopping Bag</p>
+            <div id="bag">
+              
+                
+            </div>
+            <div class="close-button" onclick="closeModal()">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 

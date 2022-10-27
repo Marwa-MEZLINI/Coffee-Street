@@ -11,27 +11,22 @@ function addItem(element) {
       .firstElementChild.innerHTML,    
     price: document.querySelector(`#${element.id} > .body_card > .rating`)
       .firstElementChild.innerHTML,
-    
-
   };
   basket.push(product);
 
   document.getElementById("cartAmount").innerHTML = basket.length;
-
-  let switchImage = document
-    .querySelector(`#${element.id} > .body_card > .rating`)
-    .lastElementChild.firstChild.getAttribute("src");
-
-  if (switchImage != "shopping-cart.png") {
-    switchImage = "shopping-cart.png";
+  
+  switchImage = "shopping-cart.png";
+  
     document
       .querySelector(`#${element.id} > .body_card > .rating`)
       .lastElementChild.firstChild.setAttribute("src", switchImage);
-  }
-
+  
   console.log(basket);
 
   updateBag()
+
+  //document.querySelector(`#${element.id} > .body_card > .rating`).lastElementChild.setAttribute('onclick',removeItem()) 
 }
 
 //adding a popup shopping bag
@@ -57,9 +52,43 @@ function updateBag() {
     let name = basket[i].title;
     let price = basket[i].price;
     let qty = 1;
-    let total = price*qty ;
+    let total = (price*qty) ;
     
-    html += "<ul><li>"+"<img src='"+img+"'>"+"</li>"+"<li>"+name+"</li>"+"<li>"+price+"</li>"+"<li>"+qty+"</li>"+"<li>"+total+"</li>" 
+    html += "<ul><li>"+"<img src='"+img+"'>"+"</li>"+"<li>"+name+"</li>"+"<li>"+price+"</li>"+"<li>"+qty+"</li>"+"<li>"+total+"</li><li><div id='delete-btn' onclick='removeItem()'><div></div><div></div></div></li></ul>" 
   }
-  document.getElementById('bag').innerHTML += html
+  document.getElementById('bag').innerHTML = html
+}
+//remove items from shopping cart
+
+function removeItem(element) {
+  // console.log(element);
+     
+  switchImage = "Frame 5.png";
+
+  document.querySelector(`#${element.id} > .body_card > .rating`)
+  .lastElementChild.firstChild.setAttribute("src", switchImage);
+
+  for (let i = 0; i < basket.length; i++) {
+    if(element.id === basket[i].id){
+      basket.splice(basket[i],1);
+    }
+    
+  }
+  
+
+  document.getElementById("cartAmount").innerHTML = basket.length;
+  updateBag();
+
+}
+
+function addRemoveItems(element) {
+  let switchImage = document
+  .querySelector(`#${element.id} > .body_card > .rating`)
+  .lastElementChild.firstChild.getAttribute("src");
+  if (switchImage === "Frame 5.png"){
+    addItem(element)
+  }
+  else {
+    removeItem(element)
+  }
 }
