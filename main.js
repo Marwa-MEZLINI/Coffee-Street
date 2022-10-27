@@ -6,11 +6,13 @@ let basket = [];
 function addItem(element) {
   let product = {
     id: element.id,
-    title: document.querySelector(`#${element.id} > .body_card > .product`)
-      .firstElementChild.innerHTML,
     imageUrl: element.firstElementChild.getAttribute("src"),
+    title: document.querySelector(`#${element.id} > .body_card > .product`)
+      .firstElementChild.innerHTML,    
     price: document.querySelector(`#${element.id} > .body_card > .rating`)
       .firstElementChild.innerHTML,
+    
+
   };
   basket.push(product);
 
@@ -28,6 +30,8 @@ function addItem(element) {
   }
 
   console.log(basket);
+
+  updateBag()
 }
 
 //adding a popup shopping bag
@@ -42,4 +46,20 @@ function classToggle() {
 function closeModal() {
   let elem = document.getElementById('dialog');
   elem.classList.remove('show');
+}
+
+//add items to shopping bag
+
+function updateBag() {
+  let html = "";
+  for (let i = 0; i < basket.length; i++) {
+    let img = basket[i].imageUrl;
+    let name = basket[i].title;
+    let price = basket[i].price;
+    let qty = 1;
+    let total = price*qty ;
+    
+    html += "<ul><li>"+"<img src='"+img+"'>"+"</li>"+"<li>"+name+"</li>"+"<li>"+price+"</li>"+"<li>"+qty+"</li>"+"<li>"+total+"</li>" 
+  }
+  document.getElementById('bag').innerHTML += html
 }
