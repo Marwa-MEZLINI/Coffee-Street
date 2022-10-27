@@ -54,7 +54,7 @@ function updateBag() {
     let qty = 1;
     let total = (price*qty) ;
     
-    html += "<ul><li>"+"<img src='"+img+"'>"+"</li>"+"<li>"+name+"</li>"+"<li>"+price+"</li>"+"<li>"+qty+"</li>"+"<li>"+total+"</li><li><div id='delete-btn' onclick='removeItem()'><div></div><div></div></div></li></ul>" 
+    html += "<ul><li>"+"<img src='"+img+"'>"+"</li>"+"<li>"+name+"</li>"+"<li>"+price+"</li>"+"<li>"+qty+"</li>"+"<li>"+total+"</li><li><div id='delete-btn' onclick='deleteItem()'><div></div><div></div></div></li></ul>" 
   }
   document.getElementById('bag').innerHTML = html
 }
@@ -68,17 +68,18 @@ function removeItem(element) {
   document.querySelector(`#${element.id} > .body_card > .rating`)
   .lastElementChild.firstChild.setAttribute("src", switchImage);
 
+  deleteItem()
+
+}
+
+function deleteItem(element){
   for (let i = 0; i < basket.length; i++) {
     if(element.id === basket[i].id){
       basket.splice(basket[i],1);
-    }
-    
+    }    
   }
-  
-
   document.getElementById("cartAmount").innerHTML = basket.length;
   updateBag();
-
 }
 
 function addRemoveItems(element) {
