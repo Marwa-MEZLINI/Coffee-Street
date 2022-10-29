@@ -81,36 +81,37 @@ body {
 .navbar .search {
     width: 222px;
     height: 40px;
+    filter: drop-shadow(6px 2px 24px rgba(0, 0, 0, 0.13));
+    border-radius: 35px;
+    background-color: #ffffff;
+    display: flex;
+    border: 2px solid #444;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .navbar .search input {
-    width: 222px;
-    height: 40px;
-    filter: drop-shadow(6px 2px 24px rgba(0, 0, 0, 0.13));
-    border-radius: 35px;
+    width: 150px;
+    height: 30px;
+    border: none;
     display: inline-block;
     outline: none;
+    border-radius: 35px;
+    text-align: center;
+}
+
+.navbar .search input:focus::placeholder {
+    color: transparent;
 }
 
 .navbar .search img {
     position: relative;
-    left: 15px;
-    top: -30px;
+    width: 25px;
+    height: 25px;
     display: inline-block;
     outline: none;
-}
-
-.navbar .search input::placeholder {
-    position: absolute;
-    width: 75px;
-    height: 18px;
-    left: 40px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    color: #929292;
-    top: 11px;
+    padding-left: 10px;
 }
 
 a {
@@ -165,7 +166,7 @@ a {
     width: 70%;
     height: 55%;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: #F6EBDA;
     padding: 1em;
     text-align: center;
     position: absolute;
@@ -216,7 +217,7 @@ a {
     position: absolute;
     right: 1px;
     top: 6px;
-    background-color: #fff;
+    background-color: #F6EBDA;
     z-index: 9.9;
     cursor: pointer;
 }
@@ -237,8 +238,6 @@ a {
 .close-button>div:last-child {
     -webkit-transform: rotate(-45deg);
 }
-
-
 
 /*popup modal styling end*/
 
@@ -361,7 +360,7 @@ a {
     bottom: -17px;
     padding-bottom: 15px;
     padding-right: 10px;
-    background-color: #fff;
+    background-color: #F6EBDA;
 }
 
 .modal .dialog-box .cart-footer .total {
@@ -387,15 +386,19 @@ a {
     background-color: #ff902b;
     color: #2f2105;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 550;
     cursor: pointer;
     border-radius: 30px;
     margin: 10px;
+    height: 35px;
+    align-items: center;
+    box-shadow: 4px 8px 12px #444;
 }
 
 .modal .dialog-box .cart-footer .next-btn:hover {
     color: #ff902b;
     background-color: #2f2105;
+    border: 2px solid #ff902b;
 }
 
 /*shopping bag footer styling end*/
@@ -407,43 +410,128 @@ a {
     width: 70%;
     height: 55%;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: #F6EBDA;
     padding: 1em;
     text-align: center;
     position: absolute;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-padding-right: 15px;
-
 }
 
 .forms-dialog-box.show {
     display: block;
 }
-.forms-dialog-box::-webkit-scrollbar {
-    width: 10px;
+
+.forms-dialog-box p {
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: underline #ff902b;
+    color: #2f2105;
 }
 
-.forms-dialog-box::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.forms-dialog-box .form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60%;
+    position: relative;
+    top: 5px;
+    left: 0px;
+    justify-content: center;
+    margin: 0px;
 }
 
-.forms-dialog-box::-webkit-scrollbar-thumb {
-    background: #f4ae26;
-    border-radius: 10px;
+.forms-dialog-box .form .name,
+.last-name,
+.postal-code,
+.city,
+.street,
+.email,
+.phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 0;
+    margin: 0;
 }
 
-.forms-dialog-box::-webkit-scrollbar-thumb:hover {
-    background: #ff902b;
+.forms-dialog-box .form .name input,
+.last-name input,
+.postal-code input,
+.city input,
+.street input,
+.email input,
+.phone input {
+    border: 1.5px solid #2f2105;
+    box-shadow: 0 4px 8px #444;
+    text-align: center;
 }
 
+input:focus::placeholder {
+    color: transparent;
+}
 
+.forms-dialog-box .form label {
+    color: #2f2105;
+    font-size: 18px;
+    font-weight: 400;
+    padding-right: 20px;
+    padding-left: 25px;
+}
+
+.forms-dialog-box .form label::after {
+    content: '*';
+    color: crimson;
+    font-weight: 400;
+    display: inline;
+}
+
+.forms-dialog-box .form .postal-code input {
+    width: 60px;
+}
+
+::placeholder {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.forms-dialog-box .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 20%;
+    position: relative;
+    bottom: 5px;
+
+}
+
+.forms-dialog-box .buttons .btn {
+    display: flex;
+    padding: 0px 20px;
+    border: none;
+    background-color: #ff902b;
+    color: #2f2105;
+    font-size: 15px;
+    font-weight: 550;
+    cursor: pointer;
+    border-radius: 30px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    box-shadow: 4px 8px 12px #444;
+    
+}
+
+.forms-dialog-box .buttons .btn:hover {
+    background-color: #2f2105;
+    color: #ff902b;
+    border: 2px solid #ff902b;
+}
 
 /*forms dialog-box styling end*/
 
