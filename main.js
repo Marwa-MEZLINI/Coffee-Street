@@ -113,6 +113,7 @@ function addRemoveItems(element) {
     removeItem(element);
   }
   totalAmount()
+  
 }
 
 function increment(id) {
@@ -152,4 +153,10 @@ function totalAmount() {
 function formsClassToggle() {
   let elem = document.getElementById("forms-box");
   elem.classList.toggle("show");
+}
+
+// go back to the shopping bag
+function backToShoppingBag() {
+  let elem = document.getElementById("forms-box");
+  elem.classList.remove("show");
 }

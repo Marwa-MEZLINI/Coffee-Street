@@ -1,21 +1,9 @@
 body {
-    width: 1440px;
+    width: 100vw;
     height: 4650px;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     align-self: center;
-}
-
-body .Hero {
-    width: 1440px;
-    height: 970px;
-    background-color: #F6EBDA;
-    background-image: url(bg-image1.png);
-    margin: 0%;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
 }
 
 /*navbar styling*/
@@ -23,21 +11,27 @@ body .Hero {
 .navbar {
     display: flex;
     flex-direction: row;
-    width: 1161px;
-    height: 40px;
+    width: 100vw;
+    height: 80px;
     position: sticky;
-    top: 36px;
-    left: 135px;
-    justify-content: space-between;
+    top: 0px;
+    left: 0px;
+    justify-content: space-around;
+    background: linear-gradient(0.65turn, #F6EBDA, #fff, #F6EBDA);
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    z-index: 9999;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .navbar .logo {
     display: flex;
     flex-direction: row;
-    width: 150px;
+    width: 168px;
     height: 30px;
     justify-self: flex-start;
-
+    justify-content: space-between;
 }
 
 .navbar .menu {
@@ -47,6 +41,7 @@ body .Hero {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .navbar .menu a {
@@ -78,6 +73,9 @@ body .Hero {
     justify-self: flex-end;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    width: 290px;
+    justify-content: space-between;
 }
 
 .navbar .search {
@@ -95,11 +93,9 @@ body .Hero {
 }
 
 .navbar .search img {
-    position: absolute;
+    position: relative;
     left: 15px;
-    right: 12.5%;
-    bottom: 12.5%;
-    top: 10px;
+    top: -30px;
     display: inline-block;
     outline: none;
 }
@@ -122,18 +118,27 @@ a {
 }
 
 .navbar .cart a img {
-    margin-left: 15px;
+    margin-left: 0px;
+}
+
+.navbar .cart a {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar .cart a #cartAmount {
     font-size: 16px;
     background-color: #ff902b;
     color: #ffffff;
-    position: absolute;
-    top: -10px;
-    right: -5px;
+    position: relative;
+    top: -15px;
+    right: 10px;
     padding: 3px;
     border-radius: 3px;
+    width: fit-content;
 }
 
 /*navbar styling end*/
@@ -141,7 +146,7 @@ a {
 /* popup modal styling*/
 .modal {
     display: none;
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.75);
@@ -149,7 +154,7 @@ a {
     top: 0px;
     bottom: 0px;
     right: 0px;
-    z-index: 9;
+    z-index: 99999;
 }
 
 .modal.show {
@@ -353,7 +358,7 @@ a {
     height: 20%;
     width: 100%;
     position: sticky;
-    bottom: -15px;
+    bottom: -17px;
     padding-bottom: 15px;
     padding-right: 10px;
     background-color: #fff;
@@ -418,13 +423,10 @@ a {
 .forms-dialog-box.show {
     display: block;
 }
-
-/* width */
 .forms-dialog-box::-webkit-scrollbar {
     width: 10px;
 }
 
-/* Track */
 .forms-dialog-box::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
@@ -432,19 +434,33 @@ a {
     margin-bottom: 30px;
 }
 
-/* Handle */
 .forms-dialog-box::-webkit-scrollbar-thumb {
     background: #f4ae26;
     border-radius: 10px;
 }
 
-/* Handle on hover */
 .forms-dialog-box::-webkit-scrollbar-thumb:hover {
     background: #ff902b;
 }
+
+
+
 /*forms dialog-box styling end*/
 
 /*content_hero styling*/
+body .Hero {
+    width: 100vw;
+    height: 970px;
+    background-color: #F6EBDA;
+    background-image: url(bg-image1.png);
+    background-repeat: no-repeat;
+    margin: 0%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
 .content_hero {
     width: 489px;
     height: 300px;
@@ -538,12 +554,13 @@ a {
 /*popular products styling*/
 .popular-product {
     position: absolute;
-    width: 1155px;
+    width: 100vw;
     height: 471px;
-    left: 135px;
+    left: 0px;
     top: 659px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .popular-product h1 {
@@ -562,7 +579,7 @@ a {
 }
 
 .popular-product .cards {
-    width: 1141px;
+    width: 90vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -709,12 +726,13 @@ a {
 /*how_to styling*/
 .how_to {
     position: absolute;
-    width: 1170px;
+    width: 100vw;
     height: 370px;
-    left: 135px;
+    left: 95px;
     top: 1337px;
     display: flex;
     flex-direction: column;
+
 }
 
 .how_to .title p {
@@ -781,7 +799,7 @@ a {
 /* about styling*/
 .about {
     position: absolute;
-    width: 1489.18px;
+    width: 100vw;
     height: 572px;
     left: -25px;
     top: 1827px;
@@ -860,12 +878,13 @@ a {
 /*menu styling*/
 .menu_section {
     position: absolute;
-    width: 1148px;
+    width: 100vw;
     height: 895px;
-    left: 146px;
+    left: 0px;
     top: 2519px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .menu_section .menu_title p {
@@ -1008,7 +1027,7 @@ a {
 
 /*testimonial styling*/
 .testimonial {
-    width: 1460.26px;
+    width: 100vw;
     height: 484px;
     position: absolute;
     top: 3534px;
@@ -1023,7 +1042,7 @@ a {
 .testimonial .testimonial_content {
     position: relative;
     top: 120px;
-    left: 136px;
+    left: 70px;
 }
 
 .testimonial .testimonial_content p:first-child {
@@ -1048,7 +1067,7 @@ a {
     width: 851.26px;
     height: 312px;
     position: relative;
-    left: 140px;
+    left: 112px;
     top: 102px;
     display: flex;
     flex-direction: column;
@@ -1118,15 +1137,16 @@ a {
 
 /*newsletter styling*/
 .newsletter {
-    width: 1170px;
+    width: 90vw;
     height: 392px;
     position: absolute;
-    left: 135px;
+    left: 90px;
     top: 4138px;
     background-image: url(unsplash_ftA71vetxuo.png);
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-repeat: no-repeat;
 }
 
 .newsletter p {
@@ -1144,6 +1164,7 @@ a {
     width: 486px;
     height: 54px;
     align-self: center;
+    margin-top: 45px;
 }
 
 .newsletter form input:first-child {
@@ -1159,7 +1180,7 @@ a {
 }
 
 .newsletter form input:last-child {
-    position: absolute;
+    position: relative;
     display: inline-block;
     outline: none;
     border: none;
@@ -1168,8 +1189,8 @@ a {
     background-color: #2f2105;
     color: #fff;
     box-shadow: 0px 4px 32px rgba(223, 195, 124, 0.25);
-    top: 120px;
-    right: 337px;
+    top: -52px;
+    right: -367px;
 }
 
 /*newsletter styling end*/
